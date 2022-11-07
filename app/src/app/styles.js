@@ -7,6 +7,7 @@ export default {
     maxWidth: '935px',
     margin: '16px auto',
     width: 'calc(100% - 40px)',
+    height: 'calc(40% - 40px)',
 
     display: 'flex',
     flexDirection: 'row',
@@ -19,12 +20,21 @@ export default {
   image: {
     order: '1',
     flex: '1 0 60%',
-    alignSelf: 'flex-start'
+    alignSelf: 'flex-start',
+    margin: 'auto',
+    display: 'block'
   },
 
   text: {
     order: '2',
-    flex: '1 0 40%',
-    alignSelf: 'flex-start'
+    flex: '1 0 38%',
+    alignSelf: 'flex-start',
+    paddingLeft: '1.125rem'
+  },
+
+  break: {
+    color: 'rgba(174, 174, 174, 0.22)',
+    width: '95%',
+    marginRight: '100px'
   }
 }

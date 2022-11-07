@@ -13,3 +13,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#profilePic {
+  width: 20%
+}
+
+@media screen and (max-width: 939px) {
+  #profilePic {
+    width: 10%
+  };
+}
