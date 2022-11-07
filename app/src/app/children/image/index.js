@@ -9,7 +9,6 @@ const Image = (props) => {
       src={data.display_url}
       style={styles}
       alt={getCaptionFromEdges(data.edge_media_to_caption)}
-      onDoubleClick={() => props.onDoubleClick}
     />
   )
 }

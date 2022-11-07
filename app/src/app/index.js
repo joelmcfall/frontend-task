@@ -8,19 +8,6 @@ import { getCaptionFromEdges } from './helpers'
 
 const App = (props) => {
   const { data } = props
-  console.log(data)
-
-  console.log('data: ', data)
-  // //caption
-  // console.log('data: ', data.edge_media_to_caption.edges[0].node.text);
-  // //number of likes
-  // console.log('data: ', data.edge_media_preview_like.count);
-  // //user post info
-  // console.log('data: ', data.owner);
-  // //comments
-  // console.log('data: ', data.comments);
-  // //usernames for comment
-  // console.log('data: ', data.edge_media_to_comment.edges)
 
   return (
     <main style={styles.main}>

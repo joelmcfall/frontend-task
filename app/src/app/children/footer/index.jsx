@@ -5,17 +5,15 @@ import LikeButton from '../like_button'
 export const Footer = ({ likeCount, postDate, userLiked }) => {
   const [liked, setLiked] = React.useState(userLiked)
   const [date] = React.useState(new Date().getMilliseconds())
+  
   React.useEffect(() => {}, [liked])
 
   const likes = liked ? likeCount + 1 : likeCount
 
   const postTime = () => {
-    console.log('called')
     const days = Math.abs(Math.ceil((date - postDate) / 1000 / 60 / 60 / 24))
     const months = days / 30
     const years = months / 12
-
-    console.log(days, months, years)
 
     if (days > 30) {
       if (months < 12) {
